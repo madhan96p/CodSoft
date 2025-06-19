@@ -41,3 +41,11 @@ if st.button("Calculate"):
     except ValueError:
         st.error("❌ Please enter valid numbers.")
 
+st.markdown(
+    """
+    <div style='text-align: center; font-size: 0.85rem; color: gray;'>
+        Created by <a href='https://pragadeeshfolio.netlify.app/' target='_blank'>Pragadeesh Srinivasan</a>
+    </div>
+    """,
+    unsafe_allow_html=True
+)
