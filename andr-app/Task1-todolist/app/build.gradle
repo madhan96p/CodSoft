@@ -1,0 +1,39 @@
+dependencies {
+    // ... other dependencies
+
+    // UI - Jetpack Compose
+    implementation("androidx.compose.ui:ui:1.5.4") // Use the latest stable version
+    implementation("androidx.compose.material3:material3:1.1.2") // Use the latest stable version
+    implementation("androidx.compose.ui:ui-tooling-preview:1.5.4") // Use the latest stable version
+    implementation("androidx.lifecycle:lifecycle-runtime-ktx:2.6.2") // Use the latest stable version
+    implementation("androidx.activity:activity-compose:1.8.0") // Use the latest stable version
+
+    // ViewModel and LiveData (or StateFlow)
+    implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2") // Use the latest stable version
+
+    // Room for local storage
+    implementation("androidx.room:room-runtime:2.6.0") // Use the latest stable version
+    kapt("androidx.room:room-compiler:2.6.0") // Use the latest stable version
+    implementation("androidx.room:room-ktx:2.6.0") // For Kotlin coroutines support
+
+    // Navigation Compose (optional, but good for multi-screen apps)
+    implementation("androidx.navigation:navigation-compose:2.7.5") // Use the latest stable version
+
+    // Icons
+    implementation("androidx.compose.material:material-icons-core:1.5.4")
+    implementation("androidx.compose.material:material-icons-extended:1.5.4")
+
+    // ... other dependencies
+}
+
+// In your top-level build.gradle, ensure you have the kapt plugin
+plugins {
+    // ...
+    id("com.google.devtools.kapt") version "1.9.0" apply false // Or your Kotlin version
+}
+
+// In your module-level build.gradle, apply the kapt plugin
+plugins {
+    // ...
+    kotlin("kapt")
+}

@@ -1,0 +1,22 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  padding: 2rem;
+  background: #f5f7fa;
+  color: #333;
+  text-align: center;
+}
+ul {
+  list-style: none;
+  margin-top: 2rem;
+}
+li {
+  margin: 1rem 0;
+}
+a {
+  font-size: 1.2rem;
+  color: #3f51b5;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
