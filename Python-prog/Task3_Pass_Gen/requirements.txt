@@ -1,4 +1,2 @@
 streamlit
 pyperclip
-random
-string
